@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/subsection.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="current_file" href="#">Men</a></li>
+      <span>/</span>
+      <li><a href="./pages/activities.html">Women</a></li>
+
+      <!-- Centered Logo -->
+      <div class="container">
+        <span>L</span>
+        <span class="star">★</span>
+        <span>E</span>
+        <span class="star">★</span>
+        <span>O</span>
+      </div>
+
+      <!-- New Cart Icon -->
+      <li class="cart-item">
+        <a href="./pages/cart.html" title="View Cart">&#128722;</a>
+      </li>
+    </ul>
+
+  </body>
+</html>

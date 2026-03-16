@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- Fixed Navigation Bar --- */
+ul {
+  list-style: none;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 15px 40px;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically aligns links and logo */
+}
+
+ul li,
+ul > span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+ul li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+ul li > a:hover {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.current_file {
+  text-decoration: underline;
+  padding: 5px;
+}
+
+/* --- Centered Logo Section --- */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+
+  /* This centers the logo in the remaining space of the nav bar */
+  margin: 0 auto;
+  /* Offset to account for the width of the links on the left */
+  padding-right: 120px;
+  text-shadow: 8px 17px 0px rgba(0, 0, 0, 0.05);
+}
+
+.star {
+  font-size: 30px;
+  color: #d9d9d9;
+  text-shadow: 8px 17px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+/*  */
+/* cart */
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px 40px;
+  margin: 0;
+}
+
+.cart-item {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.cart-item a {
+  text-decoration: none;
+  color: #000000;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.cart-item a:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+img {
+  width: 250px;
+  height: auto;
+}
