@@ -16,9 +16,16 @@ body {
   padding: 15px 40px;
   margin: 0;
   display: flex;
-  align-items: center; /* Vertically aligns links and logo */
+  align-items: center;
 }
-
+/* sticky */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+/*  */
+/*  */
 .nav > li,
 .nav > span {
   display: flex;
@@ -54,9 +61,8 @@ body {
   font-size: 40px;
   font-weight: bold;
 
-  /* This centers the logo in the remaining space of the nav bar */
   margin: 0 auto;
-  /* Offset to account for the width of the links on the left */
+
   padding-right: 120px;
   text-shadow: 8px 17px 0px rgba(0, 0, 0, 0.05);
 }
@@ -66,7 +72,41 @@ body {
   color: #d9d9d9;
   text-shadow: 8px 17px 0px rgba(0, 0, 0, 0.05);
 }
+/*  */
+/*  */
+/* cart */
 
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px 40px;
+  margin: 0;
+}
+
+.cart-item {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.cart-item a {
+  text-decoration: none;
+  color: #000000;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.cart-item a:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+img {
+  width: 250px;
+  height: auto;
+}
 /* --- Project Grid & Cards --- */
 .project-grid {
   display: grid;
@@ -152,45 +192,13 @@ body {
 }
 /*  */
 /*  */
-/* cart */
 
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  padding: 10px 40px;
-  margin: 0;
-}
-
-.cart-item {
-  margin-left: 20px;
-  font-size: 24px;
-}
-
-.cart-item a {
-  text-decoration: none;
-  color: #000000;
-  transition: transform 0.2s ease;
-  display: inline-block;
-}
-
-.cart-item a:hover {
-  transform: scale(1.1);
-  background-color: transparent;
-}
-img {
-  width: 250px;
-  height: auto;
-}
 /*  */
 /* bg-image  */
-/* 1. Setup the container to fill the screen */
+
 /* 1. The Container */
 .bg-img {
-  position: relative; /* Required for the pseudo-element to stay inside */
+  position: relative;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -231,11 +239,10 @@ img {
   }
 }
 
-/* 4. Ensure your content sits correctly on top */
 ul,
 .project-grid {
   position: relative;
-  z-index: 1; /* Explicitly keeps content above the background */
+  z-index: 1;
 }
 /*  */
 /*  */
@@ -252,5 +259,4 @@ footer > ul li > a {
 
 footer > ul li > a:hover {
   background-color: #d9d9d9;
-  /* padding: 10px; <-- Removed this to stop expansion */
 }
