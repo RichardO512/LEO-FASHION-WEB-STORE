@@ -116,18 +116,7 @@ img {
   max-width: 1300px;
   margin: 0 auto;
 }
-.project-grid:hover .card {
-  opacity: 0.4;
-  filter: blur(2px);
-  transition: all 0.4s ease;
-}
-.project-grid .card:hover {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(-10px);
-  cursor: pointer;
-  z-index: 10;
-}
+
 .card {
   background: white;
   border-radius: 15px;
@@ -141,7 +130,9 @@ img {
   color: #000000;
   margin: 15px 0;
 }
-
+.card:hover {
+  cursor: pointer;
+}
 /*  */
 .view-link {
   display: inline-block;
@@ -172,17 +163,14 @@ img {
   height: 100%;
   z-index: -1;
 
-  /* --- RESIZE HERE --- */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* Animation */
   animation: slideShow 9s infinite;
   transition: background-image 0.8s ease-in-out;
 }
 
-/* Animation Stays the same */
 @keyframes slideShow {
   0%,
   33% {
@@ -206,6 +194,159 @@ ul,
 
 /*  */
 /*  */
+/*  */
+.nav .current_file {
+  text-decoration: underline;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #ffffff;
+}
+
+.view-link {
+  display: inline-block;
+  background: #d9d9d9;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay:target {
+  display: flex;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  height: 85%;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  color: #333;
+}
+
+.header-container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+h1 {
+  display: inline-block;
+  position: relative;
+  color: white;
+  padding: 40px 100px;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #ffffff;
+}
+
+.view-link {
+  display: inline-block;
+  background: #d9d9d9;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.view-link:hover {
+  padding: 10px 22px;
+}
+/*  */
+/*  */
+.modal-overlay {
+  display: none; /* Hide default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay:target {
+  display: flex;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  height: 85%;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  color: #333;
+}
+
 /* footer */
 footer > ul li > a {
   text-decoration: none;
@@ -218,4 +359,9 @@ footer > ul li > a {
 
 footer > ul li > a:hover {
   background-color: #d9d9d9;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
 }
