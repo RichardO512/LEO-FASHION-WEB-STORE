@@ -175,29 +175,69 @@ img {
   height: 100%;
   z-index: -1;
 
-  /* --- RESIZE HERE --- */
+  /* --- --- */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   /* Animation */
-  animation: slideShow 4s infinite;
+  animation: slideShow 5s infinite;
   transition: background-image 0.8s ease-in-out;
 }
 
-/* Animation Stays the same */
+/* Animation */
 @keyframes slideShow {
-  0%,
-  33% {
+  0% {
     background-image: url("../images/Background-Image/3people.png");
   }
-  34%,
-  66% {
+  12% {
+    background-image: url("../images/Background-Image/3people.png");
+  }
+
+  15% {
     background-image: url("../images/Background-Image/7people.png");
   }
-  67%,
-  100% {
+  27% {
+    background-image: url("../images/Background-Image/7people.png");
+  }
+
+  30% {
     background-image: url("../images/Background-Image/bgimage1.png");
+  }
+  42% {
+    background-image: url("../images/Background-Image/bgimage1.png");
+  }
+
+  45% {
+    background-image: url("../images/download (1).jpg");
+  }
+  57% {
+    background-image: url("../images/download (1).jpg");
+  }
+
+  60% {
+    background-image: url("../images/download (2).jpg");
+  }
+  72% {
+    background-image: url("../images/download (2).jpg");
+  }
+
+  75% {
+    background-image: url("../images/download (3).jpg");
+  }
+  87% {
+    background-image: url("../images/download (3).jpg");
+  }
+
+  90% {
+    background-image: url("../images/download (4).jpg");
+  }
+  98% {
+    background-image: url("../images/download (4).jpg");
+  }
+
+  100% {
+    background-image: url("../images/roman.jpg");
   }
 }
 
