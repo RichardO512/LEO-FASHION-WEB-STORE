@@ -365,3 +365,116 @@ footer > ul li > a:hover {
   width: 200px;
   height: 200px;
 }
+/* arrow */
+/* Container for arrows and sizes */
+.card-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Arrow Styling */
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between left and right arrows */
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #888;
+}
+
+/* Size Circles Styling */
+.sizes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.size-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.size-circle:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* Card Controls Layout */
+.card-controls {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Arrows */
+.arrows {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow:hover {
+  color: #666;
+}
+
+/* Size Circles */
+.sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.size-circle {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Active State: The size becomes black with white text */
+.size-circle.active {
+  background-color: #000;
+  color: #fff;
+}
+.modal-overlay:target {
+  display: flex;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+}
+.modal-content {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+.modal-overlay:target .modal-content {
+  transform: scale(1);
+}

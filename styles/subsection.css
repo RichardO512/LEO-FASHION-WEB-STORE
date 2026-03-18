@@ -25,6 +25,9 @@ body {
   z-index: 99;
 }
 /*  */
+.nav .current_file {
+  text-decoration: underline;
+}
 /*  */
 .nav > li,
 .nav > span {
@@ -178,7 +181,7 @@ img {
   background-repeat: no-repeat;
 
   /* Animation */
-  animation: slideShow 9s infinite;
+  animation: slideShow 4s infinite;
   transition: background-image 0.8s ease-in-out;
 }
 
@@ -218,4 +221,8 @@ footer > ul li > a {
 
 footer > ul li > a:hover {
   background-color: #d9d9d9;
+}
+/*  */
+.subsection-link {
+  text-decoration: none;
 }
