@@ -1,0 +1,37 @@
+h1 {
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+.container-card-1 {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card-1 img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bottom-text {
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+.container-card-1 {
+  margin: 50px auto; /* Centers horizontally with top/bottom margin */
+  max-width: 800px;
+}

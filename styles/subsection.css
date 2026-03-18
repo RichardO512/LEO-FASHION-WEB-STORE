@@ -226,3 +226,6 @@ footer > ul li > a:hover {
 .subsection-link {
   text-decoration: none;
 }
+.card {
+  border: 2px solid black;
+}
