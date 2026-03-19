@@ -478,3 +478,93 @@ footer > ul li > a:hover {
 .modal-overlay:target .modal-content {
   transform: scale(1);
 }
+/*  */
+/*  */
+/*  */
+/* ===============================
+   RESPONSIVE DESIGN ADD-ON
+   Place this at the bottom
+================================= */
+
+/* Make images scale instead of fixed width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Allow navbar to wrap on small screens */
+.nav {
+  flex-wrap: wrap;
+}
+
+/* Prevent logo from pushing layout off screen */
+.container {
+  padding-right: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Make top card section responsive */
+.project-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+/* Improve main grid responsiveness */
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Footer should wrap on mobile */
+footer ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===============================
+   TABLET
+================================= */
+@media (max-width: 768px) {
+  .container {
+    font-size: 28px;
+  }
+
+  .nav {
+    padding: 10px;
+  }
+
+  .project-grid {
+    padding: 20px;
+  }
+}
+
+/* ===============================
+   PHONES
+================================= */
+@media (max-width: 480px) {
+  .nav li a {
+    font-size: 14px;
+  }
+
+  .container {
+    font-size: 22px;
+    gap: 5px;
+  }
+
+  .cart-item {
+    font-size: 18px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .bg-img {
+    min-height: 40vh;
+  }
+}
