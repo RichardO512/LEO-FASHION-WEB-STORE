@@ -15,6 +15,57 @@
       .container-1 {
 padding: 100px;
       }
+
+.container-home .project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.container-home .card {
+  text-align: center;
+  position: relative;
+  background: white;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.container-home .card img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.container-home .Women::after {
+  content: "SHOP WOMENS";
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+
+.container-home .Men::after {
+  content: "SHOP MENS";
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+a {
+  
+  text-decoration: none;
+}
+
+.container-home .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
     </style>
  </head>
   <body>
@@ -25,7 +76,7 @@ padding: 100px;
       <span>/</span>
       <li><a href="./pages/Womens.html">Women</a></li>
 
-      <!-- Centered Logo -->
+
       <div class="container">
         <span>L</span>
         <span class="star">★</span>
@@ -34,19 +85,19 @@ padding: 100px;
         <span>O</span>
       </div>
 
-      <!-- New Cart Icon -->
+   
       <li class="cart-item">
         <a href="./pages/cart.html" title="View Cart">&#128722;</a>
       </li>
     </ul>
     <!--  -->
  
-       <div class="container container-1">
+       <div class="container container-1 container-home">
     
         <div class="project-grid">
-            <div class="card">
+            <div class="card ">
                 <a href="./pages/Womens.html" class="Women">
-                    <img src="./images/women.png"></img>
+                    <img  src="./images/women.png"></img>
                 </a>
             </div>
             <div class="card">
