@@ -8,7 +8,6 @@ body {
   height: 100vh;
 }
 
-/* --- Fixed Navigation Bar --- */
 .nav {
   list-style: none;
   background-color: #ffffff;
@@ -365,8 +364,7 @@ footer > ul li > a:hover {
   width: 200px;
   height: 200px;
 }
-/* arrow */
-/* Container for arrows and sizes */
+
 .card-controls {
   margin-top: 10px;
   display: flex;
@@ -375,11 +373,10 @@ footer > ul li > a:hover {
   align-items: center;
 }
 
-/* Arrow Styling */
 .arrows {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Space between left and right arrows */
+  gap: 40px;
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -390,7 +387,6 @@ footer > ul li > a:hover {
   color: #888;
 }
 
-/* Size Circles Styling */
 .sizes {
   display: flex;
   gap: 10px;
@@ -415,7 +411,7 @@ footer > ul li > a:hover {
   background-color: #000;
   color: #fff;
 }
-/* Card Controls Layout */
+
 .card-controls {
   margin: 15px 0;
   display: flex;
@@ -424,7 +420,6 @@ footer > ul li > a:hover {
   gap: 10px;
 }
 
-/* Arrows */
 .arrows {
   display: flex;
   gap: 50px;
@@ -437,7 +432,6 @@ footer > ul li > a:hover {
   color: #666;
 }
 
-/* Size Circles */
 .sizes {
   display: flex;
   gap: 10px;
@@ -456,7 +450,6 @@ footer > ul li > a:hover {
   transition: all 0.3s ease;
 }
 
-/* Active State: The size becomes black with white text */
 .size-circle.active {
   background-color: #000;
   color: #fff;
@@ -480,51 +473,37 @@ footer > ul li > a:hover {
 }
 /*  */
 /*  */
-/*  */
-/* ===============================
-   RESPONSIVE DESIGN ADD-ON
-   Place this at the bottom
-================================= */
 
-/* Make images scale instead of fixed width */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Allow navbar to wrap on small screens */
 .nav {
   flex-wrap: wrap;
 }
 
-/* Prevent logo from pushing layout off screen */
 .container {
   padding-right: 0;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Make top card section responsive */
 .project-grid-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
-/* Improve main grid responsiveness */
 .project-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* Footer should wrap on mobile */
 footer ul {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* ===============================
-   TABLET
-================================= */
 @media (max-width: 768px) {
   .container {
     font-size: 28px;
@@ -539,9 +518,6 @@ footer ul {
   }
 }
 
-/* ===============================
-   PHONES
-================================= */
 @media (max-width: 480px) {
   .nav li a {
     font-size: 14px;

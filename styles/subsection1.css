@@ -1,0 +1,245 @@
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* --- Fixed Navigation Bar --- */
+.nav {
+  list-style: none;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 15px 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav .current_file {
+  text-decoration: underline;
+}
+
+.nav > li,
+.nav > span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.nav > li > a:hover {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+/* --- Centered Logo Section (Inside Nav) --- */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-shadow: 8px 17px 0px rgba(0, 0, 0, 0.05);
+}
+
+.star {
+  font-size: 30px;
+  color: #d9d9d9;
+}
+
+/* --- Cart Icon --- */
+.cart-item {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.cart-item a {
+  text-decoration: none;
+  color: #000000;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.cart-item a:hover {
+  transform: scale(1.1);
+}
+
+/* --- Typography --- */
+h1 {
+  font-size: 50px;
+  text-align: left;
+  margin: 20px;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: -5px 2px 5px rgba(103, 103, 103, 0.5);
+  margin: 30px 0;
+}
+h3 {
+  font-size: 40px;
+  text-align: left;
+  text-shadow: -5px 2px 5px rgba(103, 103, 103, 0.5);
+  margin: 10px 0;
+}
+p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* --- FOUNDER CARDS SECTION (Center Aligned) --- */
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* Centers cards horizontally */
+  align-items: center; /* Centers cards vertically if needed */
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container1 {
+  background: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+
+  /* FORCE EQUAL SIZE */
+  width: 260px;
+  height: 380px;
+
+  /* Internal Alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1:hover {
+  transform: translateY(-10px);
+  box-shadow: -5px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container1 img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes founder pics circular */
+  margin-bottom: 20px;
+  border: 2px solid #eee;
+}
+
+.container1 div {
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* --- THE BRAND SECTION (Center Aligned) --- */
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container3 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: white;
+}
+
+.container4 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.container4 img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Footer --- */
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #ffffff;
+  border-top: 2px solid #000000;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  gap: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s;
+  padding: 5px 10px;
+}
+
+footer ul li a:hover {
+  background-color: #d9d9d9;
+  border-radius: 4px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container3 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .container1 {
+    width: 90%;
+    height: auto;
+  } /* Stackable on very small screens */
+}

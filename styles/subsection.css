@@ -7,8 +7,7 @@ body {
   overflow-x: hidden;
   height: 100vh;
 }
-
-/* --- Fixed Navigation Bar --- */
+/*  */
 .nav {
   list-style: none;
   background-color: #ffffff;
@@ -110,7 +109,7 @@ img {
   width: 250px;
   height: auto;
 }
-/* --- Project Grid & Cards --- */
+/*  */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -272,50 +271,37 @@ footer > ul li > a:hover {
 /*  */
 /*  */
 /*  */
-/* ===============================
-   RESPONSIVE DESIGN ADD-ON
-   Place this at the bottom
-================================= */
 
-/* Make images scale instead of fixed width */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Allow navbar to wrap on small screens */
 .nav {
   flex-wrap: wrap;
 }
 
-/* Prevent logo from pushing layout off screen */
 .container {
   padding-right: 0;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Make top card section responsive */
 .project-grid-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
-/* Improve main grid responsiveness */
 .project-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* Footer should wrap on mobile */
 footer ul {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* ===============================
-   TABLET
-================================= */
 @media (max-width: 768px) {
   .container {
     font-size: 28px;
@@ -330,9 +316,6 @@ footer ul {
   }
 }
 
-/* ===============================
-   PHONES
-================================= */
 @media (max-width: 480px) {
   .nav li a {
     font-size: 14px;
