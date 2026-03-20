@@ -196,6 +196,10 @@ img {
   15% {
     background-image: url("../images/Background-Image/7people.png");
   }
+
+  20% {
+    background-image: url("../images/roman.jpg");
+  }
   27% {
     background-image: url("../images/Background-Image/7people.png");
   }
@@ -217,10 +221,6 @@ img {
   60% {
     background-image: url("../images/download (2).jpg");
   }
-  72% {
-    background-image: url("../images/download (2).jpg");
-  }
-
   75% {
     background-image: url("../images/download (3).jpg");
   }
@@ -231,12 +231,8 @@ img {
   90% {
     background-image: url("../images/download (4).jpg");
   }
-  98% {
-    background-image: url("../images/download (4).jpg");
-  }
-
   100% {
-    background-image: url("../images/roman.jpg");
+    background-image: url("../images/download (4).jpg");
   }
 }
 
