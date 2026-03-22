@@ -226,7 +226,6 @@ footer ul li a:hover {
   border-radius: 4px;
 }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
   .container2 {
     flex-direction: column;
